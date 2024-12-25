@@ -19,6 +19,10 @@ app.get('/products', (req, res) => {
 });
 
 
+app.get('/ping', (req, res) => {
+    res.send('pong');
+});
+
 // Khởi động server
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
